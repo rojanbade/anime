@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gucci</title>
+    <link rel="icon" href="./logo.png" />
+    <link rel="stylesheet" href="./gucci.css" />
+  </head>
+
+  <body>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./product.html">Product</a></li>
+      <li><a href="./about.html">About</a></li>
+    </ul>
+    <h2>Best clothing brand in the world.</h2>
+    <a href="">click me</a>
+    <p style="color: blue">Internal wins.</p>
+    <style>
+      p {
+        color: aqua;
+      }
+    </style>
+
+    <button onclick="compute(5, 6, '+')">Add</button>
+    <button onclick="compute(5, 6, '-')">Sub</button>
+    <button onclick="compute(5, 6, '*')">Mul</button>
+    <button onclick="compute(5, 6, '/')">Dvd</button>
+    <h1 id="result">0</h1>
+
+    <script>
+      function compute(a, b, c) {
+        let result;
+        // if (c == "+") {
+        //   result = a + b;
+        // } else if (c == "-") {
+        //   result = a - b;
+        // } else if (c == "*") {
+        //   result = a * b;
+        // } else {
+        //   result = a / b;
+        // }
+
+        console.log(c);
+
+        switch (c) {
+          case "+":
+            result = a + b;
+            break;
+          case "-":
+            result = a - b;
+            break;
+          case "*":
+            result = a * b;
+            break;
+          case "/":
+            result = a / b;
+            break;
+
+          default:
+            result = 0;
+        }
+        document.getElementById("result").innerHTML = result;
+        console.log(result);
+      }
+    </script>
+  </body>
+</html>

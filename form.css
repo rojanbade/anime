@@ -1,0 +1,43 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  overflow: hidden;
+}
+
+form {
+  border: solid black;
+  background-color: #c4c4c4;
+  padding: 20px;
+}
+
+label {
+  display: block;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #353535;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #000000;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #750303;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
